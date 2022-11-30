@@ -584,7 +584,7 @@ class VGStanfordDataset(BaseDataset):
                 obj_idx = _relations[i_rel_start: i_rel_end
                                                   + 1] - i_obj_start  # range is [0, num_box)
                 assert np.all(obj_idx >= 0)
-                assert np.all(obj_idx < boxes_i.shape[0])
+                #assert np.all(obj_idx < boxes_i.shape[0])
                 # (num_rel, 3), representing sub, obj, and pred
                 rels = np.column_stack((obj_idx, predicates))
             else:
