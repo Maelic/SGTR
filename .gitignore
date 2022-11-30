@@ -3,6 +3,8 @@ output
 instant_test_output
 inference_test_output
 .vscode/
+data/
+datasets/
 
 *.lprof
 *.jpg
@@ -29,6 +31,7 @@ log/
 *.pth
 *.pkl
 *.npy
+*.zip
 
 # ipython/jupyter notebooks
 *.ipynb
