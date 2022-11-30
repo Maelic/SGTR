@@ -25,9 +25,9 @@ _PREDEFINED_SPLITS_VG_STANFORD_SGDET = {
         "vgs": "vg_sgg",
     },
     "vgs": {
-        "vgs_train": ("vg/VG_100k", "vg/IndoorVG"),
-        "vgs_val": ("vg/VG_100k", "vg/IndoorVG"),
-        "vgs_test": ("vg/VG_100k", "vg/IndoorVG"),
+        "vgs_train": ("vg/VG_100K", "vg/IndoorVG"),
+        "vgs_val": ("vg/VG_100K", "vg/IndoorVG"),
+        "vgs_test": ("vg/VG_100K", "vg/IndoorVG"),
 
     }
 }
