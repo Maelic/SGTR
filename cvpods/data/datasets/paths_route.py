@@ -25,9 +25,9 @@ _PREDEFINED_SPLITS_VG_STANFORD_SGDET = {
         "vgs": "vg_sgg",
     },
     "vgs": {
-        "vgs_train": ("vg/VG_100k_images", "vg/vg_motif_anno"),
-        "vgs_val": ("vg/VG_100k_images", "vg/vg_motif_anno"),
-        "vgs_test": ("vg/VG_100k_images", "vg/vg_motif_anno"),
+        "vgs_train": ("vg/VG_100k", "vg/IndoorVG"),
+        "vgs_val": ("vg/VG_100k", "vg/IndoorVG"),
+        "vgs_test": ("vg/VG_100k", "vg/IndoorVG"),
 
     }
 }
@@ -57,9 +57,9 @@ _PREDEFINED_SPLITS_OpenImage_SGDET = {
         "oi_v4_train": ("openimages/open-imagev4/images", "openimages/open-imagev4/annotations/vrd-train-anno.json"),
         "oi_v4_val": ("openimages/open-imagev4/images", "openimages/open-imagev4/annotations/vrd-val-anno.json"),
         "oi_v4_test": ("openimages/open-imagev4/images", "openimages/open-imagev4/annotations/vrd-val-anno.json"),
-        'oi_v6_train': ("openimages/open-imagev6/images", "openimages/open-imagev6/annotations/vrd-train-anno.json"),
-        'oi_v6_val': ("openimages/open-imagev6/images", "openimages/open-imagev6/annotations/vrd-val-anno.json"),
-        'oi_v6_test': ("openimages/open-imagev6/images", "openimages/open-imagev6/annotations/vrd-test-anno.json"),
+        'oi_v6_train': ("openimages/open_image_v6/images", "openimages/open_image_v6/annotations/vrd-train-anno.json"),
+        'oi_v6_val': ("openimages/open_image_v6/images", "openimages/open_image_v6/annotations/vrd-val-anno.json"),
+        'oi_v6_test': ("openimages/open_image_v6/images", "openimages/open_image_v6/annotations/vrd-test-anno.json"),
     }
 }
 

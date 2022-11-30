@@ -40,9 +40,9 @@ _config_dict = dict(
         ],
 
         # detection pretrain weights
-        WEIGHTS="/storage/data/lirj2/ckpts/detr_oiv6.pth",
+        WEIGHTS="/home/maelic/Documents/PhD/ModelZoo/SGG/SGTR/data/detr_oiv6.pth",
 
-        TEST_WEIGHTS="/public/home/lirj2/projects/sgtr_release/playground/sgg/detr.res101.c5.one_stage_rel_tfmer/log/2022-06-24_17-09-oiv6-SGTR-rel_dec-6/model_0107999.pth",
+        TEST_WEIGHTS="/home/maelic/Documents/PhD/ModelZoo/SGG/SGTR/data/sgtr_oiv6_new/model_0107999.pth",
 
         RESNETS=dict(
             DEPTH=101,

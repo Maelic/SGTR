@@ -1,6 +1,4 @@
 cython
-torch
-torchvision
 Pillow
 tabulate
 cloudpickle

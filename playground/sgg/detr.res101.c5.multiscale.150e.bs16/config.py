@@ -1,1 +1,1 @@
-config_gqa.py
+config_vg.py
