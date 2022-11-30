@@ -1,1 +1,1 @@
-config_vg.py
+config_indoor_vg.py
