@@ -123,18 +123,18 @@ class VGStanfordDataset(BaseDataset):
 
             self.meta['predicate_longtail'] = (HEAD, BODY, TAIL)
 
-        # resampling
-        self.resampling_on = False
-        self.ent_resampling_on = False
-        self.ent_repeat_dict = None
-        self.repeat_dict = None
+            # resampling
+            self.resampling_on = False
+            self.ent_resampling_on = False
+            self.ent_repeat_dict = None
+            self.repeat_dict = None
 
-        self.resampling_method = cfg.MODEL.ROI_RELATION_HEAD.DATA_RESAMPLING.METHOD
-        assert self.resampling_method in ['bilvl', 'lvis']
-        try:
-            self.ent_resampling_on = cfg.MODEL.ROI_RELATION_HEAD.DATA_RESAMPLING.ENTITY.ENABLED
-        except AttributeError:
-            pass
+            self.resampling_method = cfg.MODEL.ROI_RELATION_HEAD.DATA_RESAMPLING.METHOD
+            assert self.resampling_method in ['bilvl', 'lvis']
+            try:
+                self.ent_resampling_on = cfg.MODEL.ROI_RELATION_HEAD.DATA_RESAMPLING.ENTITY.ENABLED
+            except AttributeError:
+                pass
 
         (fg_matrix, bg_matrix,
          (rel_counter_init, ent_counter_init)) = get_VG_statistics(self, must_overlap=True)
