@@ -109,6 +109,12 @@ class VGStanfordDataset(BaseDataset):
             if len(self.proposal_files) != 0:
                 self.procompute_proposals = self._load_precompute_proposals()
 
+        # resampling
+        self.resampling_on = False
+        self.ent_resampling_on = False
+        self.ent_repeat_dict = None
+        self.repeat_dict = None
+        
         if cfg.MODEL.ROI_RELATION_HEAD.ENABLED:
             HEAD = []
             BODY = []
@@ -122,12 +128,6 @@ class VGStanfordDataset(BaseDataset):
                     TAIL.append(i)
 
             self.meta['predicate_longtail'] = (HEAD, BODY, TAIL)
-
-            # resampling
-            self.resampling_on = False
-            self.ent_resampling_on = False
-            self.ent_repeat_dict = None
-            self.repeat_dict = None
 
             self.resampling_method = cfg.MODEL.ROI_RELATION_HEAD.DATA_RESAMPLING.METHOD
             assert self.resampling_method in ['bilvl', 'lvis']
